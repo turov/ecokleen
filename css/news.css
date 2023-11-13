@@ -1,0 +1,188 @@
+.news {
+    background-color: #FCEBDC;
+}
+
+.news__container {
+    padding: 50px 20px;
+}
+
+.news__block {
+    margin-bottom: 32px;
+}
+
+.news__block h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.news__block p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.news__form input {
+    border: 1px solid #000000;
+    padding: 12px 20px;
+    width: 100%;
+    display: block;
+    background: transparent;
+    color: #000000;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    margin-bottom: 16px;
+}
+
+.news__form input:-webkit-autofill,
+.news__form input:-webkit-autofill:hover,
+.news__form input:-webkit-autofill:focus,
+.news__form input:-webkit-autofill:active{
+    -webkit-box-shadow: 0 0 0 30px #FCEBDC inset !important;
+}
+
+.news__form input::placeholder {
+    color: #000000;
+    opacity: 1;
+}
+
+.checkbox {
+    display: flex;
+    margin-bottom: 36px;
+}
+
+.checkbox span {
+    flex-shrink: 0;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    margin-right: 8px;
+}
+
+.checkbox p {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+
+input[type=checkbox]:checked + .checkbox span {
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='8' viewBox='0 0 11 8' fill='none'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10.4204 1.70711C10.8109 1.31658 10.8109 0.683417 10.4204 0.292893C10.0299 -0.0976312 9.39671 -0.097631 9.00619 0.292893L4.04314 5.25594L1.70915 2.92194C1.31815 2.53095 0.684233 2.53095 0.293243 2.92194C-0.0977481 3.31293 -0.0977473 3.94685 0.293243 4.33784L3.33236 7.37696C3.70837 7.75297 4.30904 7.76737 4.70227 7.42018C4.72379 7.40201 4.74473 7.38278 4.76501 7.36249L10.4204 1.70711Z' fill='%233B2159'/%3E%3C/svg%3E");
+    background-size: 11px 8px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+@media (min-width: 1200px) {
+
+    .news__container::before {
+        content: '';
+        background-image: url("../assets/img/list.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        width: 520px;
+        height: 450px;
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 200px;
+        z-index: 2;
+    }
+
+    .news__container::after {
+        content: '';
+        background-color: #F39339;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        bottom: -20px;
+        left: 200px;
+        z-index: 1;
+    }
+
+    .news__container {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 80px 20px;
+        display: flex;
+        position: relative;
+    }
+
+    .news__block {
+        width: 220px;
+    }
+
+    .news__form {
+        position: relative;
+        margin-left: auto;
+        width: 50%;
+        padding-left: 200px;
+        border-left: 1px solid #000000;
+    }
+
+    .news__form::before {
+        content: '';
+        width: 4px;
+        height: 26px;
+        display: block;
+        background: #FCEBDC;
+        top: -1px;
+        left: -2px;
+        position: absolute;
+    }
+
+    .news__form::after {
+        content: '';
+        width: 4px;
+        height: 31px;
+        display: block;
+        background: #FCEBDC;
+        bottom: -1px;
+        left: -2px;
+        position: absolute;
+    }
+
+    .input__container {
+        position: relative;
+    }
+
+    .input__container input {
+        position: relative;
+        z-index: 2;
+        background: #FCEBDC;
+
+    }
+
+    .input__container::before {
+        content: '';
+        width: 180px;
+        height: 1px;
+        background: #000;
+        position: absolute;
+        top: 25px;
+        left: -200px;
+        display: block;
+        z-index: 1;
+    }
+
+    .news__button {
+        position: relative;
+        z-index: 2;
+    }
+
+    .news__button::before {
+        content: '';
+        width: 180px;
+        height: 1px;
+        background: #000;
+        position: absolute;
+        top: 25px;
+        left: -200px;
+        display: block;
+        z-index: 1;
+    }
+}

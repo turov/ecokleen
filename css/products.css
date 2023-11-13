@@ -1,0 +1,101 @@
+.products__container {
+    padding: 50px 20px;
+}
+
+.products h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+.products__list {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.products__list img {
+    display: block;
+    width: 100%;
+    transition: all 0.3s ease;
+}
+
+.products__list li + li {
+    margin-top: 16px;
+}
+
+.products__list a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #18AC52;
+    padding: 24px 0 0;
+}
+
+.products__list li span {
+    position: relative;
+    display: block;
+    font-size: 20px;
+    line-height: 28px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    padding-left: 24px;
+    padding-right: 68px;
+}
+
+.products__list li span::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 0;
+    right: 24px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 20 20' fill='none'%3E%3Cpath d='M0.93934 16.4957C0.353553 17.0815 0.353553 18.0313 0.93934 18.6171C1.52513 19.2028 2.47487 19.2028 3.06066 18.6171L0.93934 16.4957ZM19.0563 2.00005C19.0563 1.17162 18.3848 0.500048 17.5563 0.500048L4.05635 0.500047C3.22792 0.500047 2.55635 1.17162 2.55635 2.00005C2.55635 2.82848 3.22792 3.50005 4.05635 3.50005H16.0563V15.5C16.0563 16.3285 16.7279 17 17.5563 17C18.3848 17 19.0563 16.3285 19.0563 15.5L19.0563 2.00005ZM3.06066 18.6171L18.617 3.06071L16.4957 0.939387L0.93934 16.4957L3.06066 18.6171Z' fill='white'/%3E%3C/svg%3E");
+    transition: all 0.3s ease;
+}
+
+@media (min-width: 1200px) {
+    .products {
+        position: relative;
+        z-index: 2;
+        background: #FFFFFF;
+    }
+
+    .products__container {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 80px 20px;
+    }
+
+    .products__list {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .products__list li + li {
+        margin-top: 0;
+    }
+
+    .products__list li {
+        /*width: 24%;*/
+        width: 32%;
+    }
+
+    .products__list li a {
+        height: 376px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        justify-content: space-between;
+    }
+
+    .products__list li a:hover img {
+        transform: scale(1.1);
+    }
+
+    .products__list li a:hover span::before {
+        top: -12px;
+        right: 12px;
+    }
+}

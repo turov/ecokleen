@@ -1,0 +1,46 @@
+.about__container {
+    padding: 50px 20px;
+}
+
+.about h2 {
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 36px;
+}
+
+.about p {
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.about p + p {
+    margin-top: 24px;
+}
+
+.about__decor img {
+    display: block;
+    width: 100%;
+}
+
+@media (min-width: 1200px) {
+    .about__container {
+        max-width: 1360px;
+        margin: 0 auto;
+        padding: 80px 20px;
+        display: flex;
+    }
+
+    .about__block {
+        flex-shrink: 0;
+    }
+
+    .about__block:nth-of-type(1) {
+        width: 25%;
+        margin-right: 25%;
+    }
+
+    .about__block:nth-of-type(2) {
+        width: 50%;
+    }
+}
