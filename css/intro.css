@@ -8,7 +8,7 @@
 }
 
 .intro h1 {
-    font-size: 64px;
+    font-size: 48px;
     font-weight: 700;
     margin-bottom: 36px;
 }
@@ -54,6 +54,10 @@
         margin-top: 96px;
         border-bottom: none;
         border-bottom: 1px solid #FCEBDC;
+    }
+
+    .intro h1 {
+        font-size: 64px;
     }
 
     .intro__block:nth-of-type(2) img {
