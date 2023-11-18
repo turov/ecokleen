@@ -43,4 +43,21 @@
     .about__block:nth-of-type(2) {
         width: 50%;
     }
+
+    .about h2 {
+        position: relative;
+    }
+
+    .about h2::before {
+            content: '';
+            width: 200px;
+            height: 200px;
+            background-color: #F39339;
+            display: block;
+            position: absolute;
+            bottom: -250px;
+            left: 160px;
+            border-radius: 50%;
+            animation: Pulse 4s infinite;
+    }
 }
