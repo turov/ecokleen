@@ -55,8 +55,10 @@
             background-color: #F39339;
             display: block;
             position: absolute;
-            bottom: -250px;
-            left: 160px;
+            /*bottom: -250px;*/
+            /*left: 160px;*/
+            bottom: -150px;
+            left: 360px;
             border-radius: 50%;
             animation: Pulse 4s infinite;
     }
