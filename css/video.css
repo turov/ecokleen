@@ -1,0 +1,7 @@
+.video video {
+    width: 100%;
+    height: auto;
+    display: block;
+    max-width: 1470px;
+    margin: 0 auto;
+}
